@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen Singh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- *************************Navbar************************* -->
+    <header class="header">
+        <a href="#" class="logo">NAVEEN</a>
+        <i class='bx bx-menu' id="menu" style='color:#ffffff'></i>
+        <nav class="navbar">
+            <a href="#home" style="--vlr:1" class="active">Home</a>
+            <a href="#about" style="--vlr:2">About Me</a>
+            <a href="#education" style="--vlr:3">Education</a>
+            <a href="#skills" style="--vlr:4">Skills</a>
+            <a href="#contact" style="--vlr:5">Contact Me</a>
+            <a href="#projects" style="--vlr:6">Projects</a>
+            <a href="resume.pdf" target="_blank" style="--vlr:7" class="resume-btn">
+    Resume
+</a>
+
+        </nav>
+    </header>
+    <!-- *************************Home Section************************* -->
+    <section class="home"  id="home">
+        <div class="text-content">
+            <h1>I'm Naveen Singh</h1>
+            <div class="text-animation">
+                <h2>Data Scientist</h2>
+            </div>
+    <p>I am an aspiring Data Scientist with strong hands-on experience in Python, SQL, Machine Learning, and data visualization, focused on solving real-world business problems through data-driven approaches. I have worked on impactful projects including customer churn prediction, credit card fraud detection, house price prediction, and large-scale SQL data analysis, applying statistical thinking and predictive modeling to deliver actionable insights.</p>
+            <div class="btn-section">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1
+&to=naveensingh.ac.in@gmail.com
+&su=Hiring%20Inquiry%20-%20Data%20Scientist
+&body=Hello%20Naveen,%0D%0A%0D%0AI%20reviewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20data%20science%20or%20analytics%20opportunity.%0D%0A%0D%0APosition:%0D%0ACompany:%0D%0ALocation:%0D%0A%0D%0ARegards,%0D%0A"
+target="_blank"
+class="btn">
+    Hire Me
+</a>
+
+
+
+                <button class="btn" onclick="openChatbot()">Let's Talk</button>
+
+
+            </div>
+            <div class="social-media">
+    <a href="https://www.facebook.com/navin.singh.557323/" target="_blank" class="social-btn fb">
+        <i class='bx bxl-facebook'></i>
+    </a>
+    <a href="https://www.instagram.com/official_mr_navin/" target="_blank" class="social-btn ig">
+        <i class='bx bxl-instagram'></i>
+    </a>
+    <a href="https://www.linkedin.com/in/naveen-kumar-%F0%9F%92%A5-passionate-data-analyst-8ba733253/" target="_blank" class="social-btn li">
+        <i class='bx bxl-linkedin'></i>
+    </a>
+    <a href="https://github.com/Naveenkumar076" target="_blank" class="social-btn gh">
+        <i class='bx bxl-github'></i>
+    </a>
+</div>
+
+            </div>
+        </div>
+        <img src="MdSay.png" alt="">
+    </section>
+    <!-- *************************About Section************************* -->
+    <section class="about" id="about">
+        <h2 class="title">About <span>Me</span></h2>
+        <img src="MdSay1.png" alt="" class="aboutImg">
+        <div class="text-content2">
+                <h2>Data Analyst</h2>
+    <p>I am a motivated Data Analyst with hands-on experience in Python, SQL, and data visualization, focused on transforming raw data into actionable business insights. I have worked on real-world projects such as telecom customer churn analysis, credit card fraud detection, Netflix data analysis, and house price prediction, where I applied analytical and statistical techniques to support data-driven decision-making.</p>
+            <button class="btn">Read More</button>
+        </div>
+    </section>
+    <!-- *************************Education Section************************* -->
+    <section class="education" id="education">
+        <h2 class="title">My <span>Education</span></h2>
+        <div class="row">
+            <div class="column">
+                <h2>Education</h2>
+                <div class="box">
+                    <div class="education-content">
+                        <div class="content">
+    <div class="year">2019-20<i class='bx bxs-calendar'></i></div>
+    <h3>CISCE</h3>
+    <p>I am a motivated data professional with a strong academic foundation and a growing passion for data analytics and data science. I completed my Class 10 education from an ICSE board school, which helped build a solid base in analytical thinking, mathematics, and problem-solving.</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+        <div class="year">2021-22 <i class='bx bxs-calendar'></i></div>
+                            <h3>CBSE</h3>
+    <p>I am an aspiring data professional with a strong academic background and a keen interest in data analytics and data science. I completed my Class 12 education from a CBSE board school, where I developed a solid foundation in mathematics, logical reasoning, and analytical problem-solving.</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+    <div class="content">
+        <div class="year">2022-26 <i class='bx bxs-calendar'></i></div>
+        <h3>B-TECH</h3>
+        <p>I am a motivated and detail-oriented data professional currently pursuing a B.Tech degree, with an expected completion in 2026. My academic journey has equipped me with a strong foundation in programming, analytical thinking, and problem-solving, which I actively apply to real-world data challenges.</p>
+    </div>
+    </section>
+
+<!-- ================= CHATBOT ================= -->
+<div id="chatbot-icon">💬</div>
+
+<div id="chatbot">
+    <div class="chat-header">
+        <span>Ask Naveen</span>
+        <span id="close-chat">✖</span>
+    </div>
+
+    <div class="chat-body" id="chat-body">
+        <div class="bot-msg">Hi 👋 I’m Naveen’s assistant. Ask me about his skills, projects, or contact details.</div>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button id="send-btn">Send</button>
+    </div>
+</div>
+
+
+    <!-- *************************Skills Section************************* -->
+    <section class="skills" id="skills">
+        <h2 class="title">My <span>Skills</span></h2>
+        <div class="wrapper">
+            <div class="skill-content">
+                <h3 class="skill-title">Language</h3>
+                <div class="skill-box skill-box1">
+                    <div class="single-skill">
+                        <span class="topic">PYTHON</span>
+                        <span class="topic">90%</span>
+                    </div>
+                    <div class="bar-side">
+                        <div class="bar bar-1"></div>
+                    </div>
+                    <div class="single-skill">
+                        <span class="topic">MACHINE LEARNING</span>
+                        <span class="topic">80%</span>
+                    </div>
+                    <div class="bar-side">
+                        <div class="bar bar-2"></div>
+                    </div>
+                    <div class="single-skill">
+                        <span class="topic">JAVA</span>
+                        <span class="topic">70%</span>
+                    </div>
+                    <div class="bar-side">
+                        <div class="bar bar-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-content">
+                <h3 class="skill-title">Language</h3>
+                <div class="skill-box skill-box2">
+                    <div class="single-skill">
+                        <span class="topic">SQL</span>
+                        <span class="topic">90%</span>
+                    </div>
+                    <div class="bar-side">
+                        <div class="bar bar-1"></div>
+                    </div>
+                    <div class="single-skill">
+                        <span class="topic">POWER BI</span>
+                        <span class="topic">80%</span>
+                    </div>
+                    <div class="bar-side">
+                        <div class="bar bar-2"></div>
+                    </div>
+                <div class="single-skill">
+                    <span class="topic">DATA ANALYSIS</span>
+                    <span class="topic">70%</span>
+                </div>
+                    <div class="bar-side">
+                        <div class="bar bar-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- *************************Projects Section************************* -->
+<section class="projects" id="projects">
+    <h2 class="title">My <span>Projects</span></h2>
+
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>Customer Churn Prediction</h3>
+            <p>
+                Developed a machine learning model to predict customer churn using Python,
+                Pandas, and Scikit-learn, enabling data-driven retention strategies.
+            </p>
+
+            <div class="project-tech">
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>Pandas</span>
+            </div>
+
+            <div class="project-links">
+                <a href="https://github.com/Naveenkumar076/Telecom-Churn-Prediction/blob/main/Telecom%20churn%20(1).ipynb" target="_blank">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>Credit Card Fraud Detection</h3>
+            <p>
+                Built a fraud detection system using supervised learning algorithms to
+                identify fraudulent transactions with high accuracy.
+            </p>
+
+            <div class="project-tech">
+                <span>Python</span>
+                <span>ML</span>
+                <span>EDA</span>
+            </div>
+
+            <div class="project-links">
+                <a href="https://github.com/Naveenkumar076/Fraud-Detection/blob/main/Fraud_detection.ipynb" target="_blank">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <h3>House Price Prediction</h3>
+            <p>
+                Designed a regression-based predictive model for estimating house prices
+                using feature engineering and statistical analysis.
+            </p>
+
+            <div class="project-tech">
+                <span>Python</span>
+                <span>Regression</span>
+                <span>Data Analysis</span>
+            </div>
+
+            <div class="project-links">
+                <a href="https://github.com/Naveenkumar076/House-Price-Prediction" target="_blank">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+            <h3>SQL Data Analysis</h3>
+            <p>
+                Performed large-scale SQL analysis to extract business insights,
+                optimize queries, and generate analytical reports.
+            </p>
+
+            <div class="project-tech">
+                <span>SQL</span>
+                <span>Data Analysis</span>
+                <span>Reporting</span>
+            </div>
+
+            <div class="project-links">
+                <a href="https://github.com/Naveenkumar076/Netflix_project/blob/main/Netflix%20project.sql" target="_blank">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- *************************Contact Section************************* -->
+    <section class="contact" id="contact">
+        <h2 class="title">Contact<span>Me</span></h2>
+        <form action="#" id="">
+            <div class="input-box">
+    <input type="text" required placeholder="Full Name">
+    <input type="email" required placeholder="Email">
+            </div>
+            <div class="input-box">
+    <input type="tel" required placeholder="Mobile Number">
+    <input type="email" required placeholder="Subject For">
+            </div>
+    <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+    <input type="submit" value="Send Message" class="btn">
+        </form>
+
+    </section>
+    <footer>
+        <div class="text">
+            <p>Copyright @ 2026 by Naveen Singh</p>
+        </div>
+    <a href="#"> <i class='bx bx-up-arrow-alt'></i></a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
